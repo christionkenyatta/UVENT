@@ -1,9 +1,10 @@
+@@ -0,0 +1,96 @@
 *,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+::before,
+::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
 
 
 /* INTRO SECTION
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
++–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .intro {
   background: #7FFFD4;
@@ -36,7 +37,7 @@ h1 {
 
 
 /* TIMELINE
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
++–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .timeline ul li {
   list-style-type: none;
   position: relative;
