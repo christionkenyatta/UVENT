@@ -1,32 +1,58 @@
+<!DOCTYPE html>
+
 <html>
-    <head>
-        <link rel="stylesheet" href="uventstylesheet.css"> </head>
+<head>
+    <link href="uventstylesheet.css" rel="stylesheet">
 
     <title>UVENT</title>
-  
-    
-    <body>
-    
-        <center> <h1>Welcome to UVENT</h1> </center>
-   
-    <form method="post" action ="****">
+</head>
 
-         <h3>Enter your user-name (this will remain anonymous): <input type="text" username="name1"/></h3>
-         
-         <h3>Vent: <input type="text" name="vent"/></h3>
-         <h3>Post can be viewed by: </h3>
-         
-            <input type="radio" name="sex" value="">Females
-            <br>
-            <input type="radio" name="sex" value="Males">Males
-    
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#home">Home</a> <a href="#news">Vent</a> <a href="#contact">Contact</a> <a href="#about">About</a> <a class="icon" href="javascript:void(0);" onclick="myFunction()" style="font-size:15px;">&#9776;</a>
+    </div>
 
-        <h3><input type="checkbox" name="" value="">
-      
-      Do you want your vent session to be seen by everyone?<br>
-      
-        <p><input type="submit" value="Submit"></p>
-    </form>
 
-    </body>
+    <div style="padding-left:16px">
+        <h2>
+        </h2>
+        <script>
+              function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+              }
+        </script>
+
+        <div id="wrapper">
+            <center>
+                <h1>Welcome to UVENT</h1>
+            </center>
+        </div>
+
+
+        <form action="/UventAppHandler" method="post">
+            <h3>Enter your user-name (this will remain anonymous): <input type="text"></h3>
+
+
+            <div id="signin">
+                <h3>Vent: <input name="vent" type="text"></h3>
+            </div>
+
+
+            <h3>Post can be viewed by:</h3>
+            <input name="..." type="radio" value="">Females<br>
+            <input name="..." type="radio" value="Males">Males
+
+            <h3><input name="" type="checkbox" value=""> Do you want your vent session to be seen by everyone?<br></h3>
+
+
+            <p><input type="submit" value="Submit">
+            </p>
+        </form>
+    </div>
+</body>
 </html>
